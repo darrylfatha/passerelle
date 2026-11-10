@@ -1,0 +1,32 @@
+PASSERELLE 1.0.0 — Belajar bahasa Prancis, offline
+==================================================
+
+Aplikasi Windows native (Rust), tanpa WebView, tanpa internet, tanpa akun.
+
+ISI PAKET
+  Passerelle-Setup-1.0.0.exe   Installer. Memasang ke folder pengguna (tanpa hak admin),
+                               membuat shortcut Desktop & Start Menu, dan mendaftarkan
+                               uninstaller di Pengaturan Windows > Aplikasi.
+  Portable\Passerelle.exe      Versi portabel: langsung jalan tanpa dipasang.
+
+CARA PASANG
+  1. Klik dua kali Passerelle-Setup-1.0.0.exe.
+  2. Jika muncul "Windows melindungi PC Anda" (SmartScreen), klik "Info selengkapnya"
+     lalu "Tetap jalankan". Peringatan ini muncul karena installer belum
+     ditandatangani sertifikat berbayar.
+  3. Tekan "Pasang". Buka lewat shortcut "Passerelle" di Desktop.
+
+SUARA PRANCIS (disarankan, gratis)
+  Pengaturan Windows > Waktu & bahasa > Ucapan > Tambahkan suara > Français (France).
+  Tanpa suara ini, aplikasi tetap jalan dengan panduan bunyi tertulis.
+
+DATA & PRIVASI
+  Progres dan rekaman suara hanya disimpan di %APPDATA%\Passerelle.
+  Tidak ada yang dikirim ke internet.
+
+PINTASAN
+  Ctrl+1–5 pindah layar · Ctrl+, Pengaturan · Ctrl+K kamus cepat
+  Enter periksa/lanjut · 1–4 pilih jawaban · Spasi dengar ulang · Esc keluar
+
+MELEPAS PASANG
+  Pengaturan Windows > Aplikasi > Passerelle > Copot pemasangan.

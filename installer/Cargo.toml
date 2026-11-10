@@ -1,0 +1,19 @@
+[package]
+name = "passerelle-setup"
+version = "1.0.0"
+edition = "2021"
+description = "Pemasang Passerelle"
+
+[[bin]]
+name = "Passerelle-Setup"
+path = "src/main.rs"
+
+[dependencies]
+eframe = { version = "0.31", default-features = false, features = ["glow", "default_fonts"] }
+egui_extras = { version = "0.31", default-features = false, features = ["svg"] }
+winreg = "0.55"
+resvg = "0.45"
+
+[build-dependencies]
+resvg = "0.45"
+png = "0.17"
