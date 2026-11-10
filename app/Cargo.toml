@@ -2,6 +2,7 @@
 name = "passerelle"
 version = "1.0.0"
 edition = "2021"
+license = "MIT"
 description = "Belajar bahasa Prancis offline, dari nol sampai lancar."
 authors = ["Darryl Fatha"]
 

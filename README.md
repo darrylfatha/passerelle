@@ -67,3 +67,9 @@ dist/       paket ZIP siap pakai
 ## Privasi
 
 Progres dan rekaman suara hanya disimpan di `%APPDATA%\Passerelle`. Aplikasi tidak melakukan koneksi jaringan.
+
+## Lisensi
+
+Kode dan konten repositori ini dirilis di bawah [Lisensi MIT](LICENSE). Anda bebas memakai, mengubah, dan membagikannya, asalkan pemberitahuan hak cipta dan lisensi tetap disertakan.
+
+Font yang dipakai aplikasi (Segoe UI dan Georgia) tidak ikut dibundel. Aplikasi memuatnya dari folder font Windows saat berjalan.
