@@ -331,7 +331,7 @@ impl eframe::App for App {
         self.autosave(false);
     }
 
-    fn on_exit(&mut self, _gl: Option<&eframe::glow::Context>) {
+    fn on_exit(&mut self) {
         if let Some(s) = &self.session { let t = s.elapsed(); self.st.add_time(t); }
         self.autosave(true);
     }
@@ -345,6 +345,10 @@ pub fn trace(s: &str) {
     }
 }
 
+mod gpu {
+    include!("../../gpu.rs");
+}
+
 fn main() -> eframe::Result {
     trace("main: start");
     let (rgba, size) = ui::logo_rgba(64);
@@ -356,6 +360,8 @@ fn main() -> eframe::Result {
             .with_min_inner_size([960.0, 640.0])
             .with_icon(egui::IconData { rgba, width: size, height: size }),
         centered: true,
+        renderer: eframe::Renderer::Wgpu,
+        wgpu_options: gpu::wgpu_options(),
         ..Default::default()
     };
     trace("main: run_native");

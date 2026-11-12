@@ -260,6 +260,8 @@ fn main() -> eframe::Result {
         viewport: egui::ViewportBuilder::default().with_title(if un { "Lepas pasang Passerelle" } else { "Pasang Passerelle" })
             .with_inner_size([620.0, 470.0]).with_resizable(false).with_maximize_button(false).with_icon(logo_icon()),
         centered: true,
+        renderer: eframe::Renderer::Wgpu,
+        wgpu_options: gpu::wgpu_options(),
         ..Default::default()
     };
     eframe::run_native("Passerelle Setup", opts, Box::new(|cc| {
@@ -267,6 +269,10 @@ fn main() -> eframe::Result {
         fonts(&cc.egui_ctx);
         Ok(Box::new(setup))
     }))
+}
+
+mod gpu {
+    include!("../../gpu.rs");
 }
 
 fn egui_extras_svg(ctx: &egui::Context) { egui_extras::install_image_loaders(ctx); }

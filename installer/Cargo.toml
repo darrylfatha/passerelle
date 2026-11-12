@@ -10,7 +10,7 @@ name = "Passerelle-Setup"
 path = "src/main.rs"
 
 [dependencies]
-eframe = { version = "0.31", default-features = false, features = ["glow", "default_fonts"] }
+eframe = { version = "0.31", default-features = false, features = ["wgpu", "default_fonts"] }
 egui_extras = { version = "0.31", default-features = false, features = ["svg"] }
 winreg = "0.55"
 resvg = "0.45"

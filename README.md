@@ -6,7 +6,7 @@ Aplikasi Windows **native** untuk belajar bahasa Prancis dari nol, dibuat dengan
 
 ## Unduh
 
-- **[Passerelle-1.0.0-win64.zip](dist/Passerelle-1.0.0-win64.zip)** (11,5 MB), berisi:
+- **[Passerelle-1.0.0-win64.zip](dist/Passerelle-1.0.0-win64.zip)** (15,7 MB), berisi:
   - `Passerelle-Setup-1.0.0.exe`: installer. Tidak butuh hak admin, dan membuat shortcut di Desktop serta Start Menu.
   - `Portable/Passerelle.exe`: langsung jalan tanpa dipasang.
 - **[Dokumentasi teknis (PDF)](docs/Passerelle-Dokumentasi-Teknis.pdf)**

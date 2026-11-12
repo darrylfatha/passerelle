@@ -11,7 +11,7 @@ name = "Passerelle"
 path = "src/main.rs"
 
 [dependencies]
-eframe = { version = "0.31", default-features = false, features = ["glow", "default_fonts", "accesskit"] }
+eframe = { version = "0.31", default-features = false, features = ["wgpu", "default_fonts", "accesskit"] }
 egui = "0.31"
 egui_extras ={ version = "0.31", default-features = false, features = ["svg"] }
 serde = { version = "1", features = ["derive"] }
